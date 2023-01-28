@@ -2,7 +2,7 @@ import React from "react";
 import { Input, Form } from "antd";
 import Dev_img from "./images/dev_img.png";
 
-export default function Hello() {
+export default function SignUp() {
   return (
     <>
       <div className="container">
@@ -14,8 +14,17 @@ export default function Hello() {
               <a href="/">Sign Up with Google</a>
               <a href="/">Sign Up with Facebook</a>
             </div>
-            <Form.Item label="Email">
-              <Input.Email />
+            <Form.Item
+              label="Email"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your password!",
+                  type: "email",
+                },
+              ]}
+            >
+              <Input />
             </Form.Item>
             <Form.Item
               label="Password"
