@@ -13,7 +13,7 @@ export default function SignUp() {
               <h1>Sign Up</h1>
               <p>And enjoy life during the time just you saved</p>
               <div>
-                <a href="/" className="btns"><FontAwesomeIcon icon="fa-brands fa-google" />Sign Up with Google</a>
+                <a href="/" className="btns"><i className="fa-brands fa-google"></i> Sign Up with Google</a>
                 <a href="/" className="btns">Sign Up with Facebook</a>
               </div>
               <Form.Item
