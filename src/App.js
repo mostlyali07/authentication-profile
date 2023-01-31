@@ -7,14 +7,14 @@ export default function SignUp() {
   return (
     <>
       <div className="container my-5 background_main">
-        <div className="row MainDiv">
-          <div className="col-md-6 d-flex justify-content-center align-items-center">
+        <div className="row MainDiv p-5">
+          <div className="col-md-6 d-flex justify-content-center align-items-center left_div">
             <div>
-              <h1>Sign Up</h1>
-              <p>And enjoy life during the time just you saved</p>
-              <div>
-                <a href="/" className="btns"><i className="fa-brands fa-google"></i> Sign Up with Google</a>
-                <a href="/" className="btns">Sign Up with Facebook</a>
+              <h1 className="display-5 font-weight-bold">Sign Up</h1>
+              <p className="display-9 mb-4">And enjoy life during the time just you saved</p>
+              <div className="mb-5">
+                <a href="/" className="btns"><i className="fa-brands fa-google">&nbsp;</i>Sign Up with Google</a>
+                <a href="/" className="btns"><i class="fa-brands fa-facebook">&nbsp;</i>Sign Up with Facebook</a>
               </div>
               <Form.Item
                 label="Name"
@@ -26,7 +26,7 @@ export default function SignUp() {
                   },
                 ]}
               >
-                <Input placeholder="Example" />
+                <Input placeholder="Enter Your Full Name" />
               </Form.Item>
               <Form.Item
                 label="Email"
@@ -49,6 +49,7 @@ export default function SignUp() {
                 <Input.Password placeholder="8+ Characters, 1 Capital letters" />
               </Form.Item>
               <Button>Create an Account</Button>
+              <p className="mt-5">Already have an account? <a href="/">Sign in</a></p>
             </div>
           </div>
           <div className="col-md-6 d-flex justify-content-center align-items-center">
