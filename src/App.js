@@ -1,12 +1,13 @@
 import "./App.css";
 import React from "react";
 import { Input, Form, Button } from "antd";
-import Dev_img from "./images/dev_img.png";
+import Dev_img from "./images/right_img.png";
 
 export default function SignUp() {
   return (
     <>
       <div className="container my-5 background_main">
+              <div className="female"></div>
         <div className="row MainDiv p-5">
           <div className="col-md-6 d-flex justify-content-center align-items-center left_div">
             <div>
@@ -53,9 +54,10 @@ export default function SignUp() {
             </div>
           </div>
           <div className="col-md-6 d-flex justify-content-center align-items-center">
-            <img src={Dev_img} alt="Dev_img" />
+            <img src={Dev_img} alt="Dev_img" width={500} />
           </div>
         </div>
+        <div className="male"></div>
       </div>
     </>
   );

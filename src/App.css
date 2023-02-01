@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: url(./images/3D.jpg);
+  /* background-image: url(./images/3D.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 label {
   font-family: "Montserrat", sans-serif;
@@ -17,15 +17,13 @@ label {
   background-color: #fff;
   padding: 20px;
   border-radius: 26px;
-  box-shadow: 12px 12px 12px -6px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 12px 12px 12px -6px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 12px 12px 12px -6px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 23px -8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 23px -8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 23px -8px rgba(0, 0, 0, 0.5);
 }
 .MainDiv {
   height: 80vh;
-  background-color: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(2px);
+  background-color: #fefefe;
   border-radius: 26px;
   box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
@@ -40,4 +38,38 @@ label {
   margin-right: 12px;
   border-radius: 6px;
   background-color: #fff;
+}
+.female {
+  height: 120px;
+  width: 120px;
+  border-radius: 26px;
+  top: 20px;
+  bottom: 0;
+  left: 530px;
+  z-index: 99;
+  position: absolute;
+  background-image: url(./images/female.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 23px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 23px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 23px -15px rgba(0, 0, 0, 0.75);
+}
+.male {
+  height: 120px;
+  width: 120px;
+  border-radius: 26px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+  position: absolute;
+  background-image: url(./images/male.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 23px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 23px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 23px -15px rgba(0, 0, 0, 0.75);
 }
