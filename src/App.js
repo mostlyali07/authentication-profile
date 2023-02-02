@@ -68,7 +68,7 @@ export default function SignUp() {
               >
                 <Input.Password placeholder="8+ Characters, 1 Capital letters" />
               </Form.Item>
-              <Button>Create an Account</Button>
+              <Button className="Acc">Create an Account</Button>
               <p className="mt-5">
                 Already have an account? <a href="/">Sign in</a>
               </p>

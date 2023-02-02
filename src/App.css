@@ -68,3 +68,13 @@ label {
   -moz-box-shadow: 0px 0px 23px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 23px -15px rgba(0, 0, 0, 0.75);
 }
+.Acc{
+  background-color: #5379f6;
+  color: #fff;
+  border: 1px solid#5379f6;
+}
+.Acc:hover{
+  background-color: #0000;
+  color: #5379f6;
+  border: 1px solid#5379f6;
+}
