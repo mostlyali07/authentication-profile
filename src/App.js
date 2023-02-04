@@ -2,10 +2,17 @@ import "./App.css";
 import React from "react";
 import { Input, Form, Button } from "antd";
 import Dev_img from "./images/right_img.png";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function SignUp() {
   return (
     <>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<div>Home page</div>}/>
+      <Route path="/about" element={<div>About page</div>}/>
+    </Routes>
+    </BrowserRouter>
       <div className="container my-5 background_main">
         <div className="female"></div>
         <div className="row MainDiv p-5">
