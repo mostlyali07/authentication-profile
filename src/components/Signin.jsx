@@ -1,4 +1,4 @@
-import "../src/App.css";
+import "../App.css";
 import React from "react";
 import { Input, Form, Button } from "antd";
 
