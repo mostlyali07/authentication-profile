@@ -1,8 +1,29 @@
 import "../App.css";
-import React from "react";
+import React, { useState } from "react";
+import Dev_img from "../images/right_img.png";
+import axios from "axios";
 import { Input, Form, Button } from "antd";
+import { BrowserRouter, Link, Route, Router, Routes } from "react-router-dom";
 
 export default function Signin() {
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    async function submit(e) {
+        e.preventDefault();
+
+        try {
+            await axios.post("http://localhost:8000/", {
+                email, password
+            })
+        }
+        catch (e) {
+            console.log(e);
+        }
+    }
+
+
     return (
         <>
             <div className="container my-5 background_main">
@@ -20,7 +41,7 @@ export default function Signin() {
                                     Google
                                 </a>
                                 <a href="/" className="btns">
-                                    <i class="fa-brands fa-facebook">&nbsp;</i>Sign In with
+                                    <i className="fa-brands fa-facebook">&nbsp;</i>Sign In with
                                     Facebook
                                 </a>
                             </div>
@@ -53,7 +74,7 @@ export default function Signin() {
                                         maxWidth: 200,
                                     }}
                                 >
-                                    <Input placeholder="info@example.com" />
+                                    <Input placeholder="info@example.com" onChange={(e) => { setEmail(e.target.value) }} />
                                 </Form.Item>
                             </div>
                             <Form.Item
@@ -68,11 +89,13 @@ export default function Signin() {
                                     maxWidth: 280,
                                 }}
                             >
-                                <Input.Password placeholder="8+ Characters, 1 Capital letters" />
+                                <Input.Password placeholder="8+ Characters, 1 Capital letters" onChange={(e) => { setPassword(e.target.value) }} />
                             </Form.Item>
-                            <Button className="Acc">Create an Account</Button>
+                            <Button className="Acc" onClick={submit}>Sign in</Button>
                             <p className="mt-5">
-                                Create a new account? <a href="/">Sign Up</a>
+                                Create a new account?
+                                {/* <a href="/">Sign Up</a> */}
+                                <Link to="/Signup">Sign Up</Link>
                             </p>
                         </div>
                     </div>
