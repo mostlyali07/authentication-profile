@@ -93,11 +93,11 @@ export default function SignUp() {
               >
                 <Input.Password placeholder="8+ Characters, 1 Capital letters" onChange={(e) => { setPassword(e.target.value) }} />
               </Form.Item>
-              <Button className="Acc" onClick={submit}>Sign in</Button>
+              <Button className="Acc" onClick={submit}>Sign Up</Button>
               <p className="mt-5">
                 Create a new account?
                 {/* <a href="/">Sign Up</a> */}
-                <Link to="/Signup">Sign Up</Link>
+                <Link to="/Signin">Sign In</Link>
               </p>
             </div>
           </div>
